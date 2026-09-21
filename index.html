@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="theme-color"
+    content="#c8102e"
+  >
+
+  <title>
+    Bearcat Dining | Campus IT Support
+  </title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+</head>
+
+<body>
+
+  <!-- Decorative background -->
+  <div
+    class="background-decoration"
+    aria-hidden="true"
+  >
+    <div class="background-circle circle-one"></div>
+    <div class="background-circle circle-two"></div>
+
+    <div class="bearcat-watermark">
+      BEARCAT
+      <span>DINING</span>
+    </div>
+
+    <div class="paw-watermark">
+      <svg viewBox="0 0 100 100">
+        <ellipse cx="50" cy="62" rx="25" ry="21"></ellipse>
+        <ellipse cx="20" cy="39" rx="10" ry="14"></ellipse>
+        <ellipse cx="41" cy="25" rx="10" ry="14"></ellipse>
+        <ellipse cx="62" cy="25" rx="10" ry="14"></ellipse>
+        <ellipse cx="82" cy="39" rx="10" ry="14"></ellipse>
+      </svg>
+    </div>
+  </div>
+
+
+  <!-- Header -->
+  <header class="topbar">
+
+    <div class="topbar-inner">
+
+      <div class="brand-area">
+
+        <img
+          src="assets/chartwells-logo.jpeg"
+          alt="Chartwells"
+          class="chartwells-logo"
+          id="chartwellsLogo"
+          onerror="
+            this.style.display='none';
+            document.getElementById('logoFallback').style.display='block';
+          "
+        >
+
+        <div
+          id="logoFallback"
+          class="logo-fallback"
+        >
+          Chartwells
+        </div>
+
+      </div>
+
+      <div class="header-divider"></div>
+
+      <div class="header-title">
+
+       
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- Main content -->
+  <main class="page">
+
+    <!-- Intro -->
+    <section class="intro">
+
+      <div class="support-badge">
+        CAMPUS IT SUPPORT
+      </div>
+
+      <h1>
+        Report an IT Issue
+      </h1>
+
+      
+    </section>
+
+
+    <!-- Features -->
+  
+    <!-- Ticket Card -->
+    <section class="ticket-card">
+
+      <div class="card-header">
+
+        <div class="card-header-icon">
+
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M12 2C8.13 2 5 5.13 5 9c0
+              5.25 7 13 7 13s7-7.75
+              7-13c0-3.87-3.13-7-7-7zm0
+              9.5A2.5 2.5 0 1 1 12
+              6a2.5 2.5 0 0 1 0 5.5z"
+            />
+          </svg>
+
+        </div>
+
+        <div>
+
+          <span class="section-label">
+            ISSUE LOCATION
+          </span>
+
+          <h2>
+            Where is the problem?
+          </h2>
+
+        </div>
+
+      </div>
+
+
+      <!-- Location -->
+      <div class="location-section">
+
+        <label
+          for="location"
+          class="sr-only"
+        >
+          Location
+        </label>
+
+        <select
+          id="location"
+          required
+          disabled
+        >
+          <option value="">
+            Loading locations...
+          </option>
+        </select>
+
+        <p
+          id="locationMessage"
+          class="location-message"
+        >
+          Loading Bearcat Dining locations...
+        </p>
+
+      </div>
+
+
+      <!-- Form -->
+      <form id="ticketForm">
+
+        <div class="form-content">
+
+
+          <!-- Name -->
+          <div class="field">
+
+            <label for="reporterName">
+
+              Your Name
+
+              <span class="required">
+                *
+              </span>
+
+            </label>
+
+            <input
+              id="reporterName"
+              name="reporterName"
+              type="text"
+              maxlength="100"
+              autocomplete="name"
+              placeholder="Enter your name"
+              required
+            >
+
+          </div>
+
+
+          <!-- Problem -->
+          <div class="field">
+
+            <label for="problemDescription">
+
+              Problem Description
+
+              <span class="required">
+                *
+              </span>
+
+            </label>
+
+            <textarea
+              id="problemDescription"
+              name="problemDescription"
+              maxlength="3000"
+              placeholder="Describe what is happening..."
+              required
+            ></textarea>
+
+            <p class="field-help">
+              Include details such as the device,
+              register, error message, or what you
+              were trying to do.
+            </p>
+
+          </div>
+
+
+          <!-- Attachment -->
+          <div class="field">
+
+            <div class="field-heading-row">
+
+              <label for="attachment">
+                Photo or Video
+              </label>
+
+              <span class="optional-badge">
+                OPTIONAL
+              </span>
+
+            </div>
+
+
+            <label
+              for="attachment"
+              class="upload-area"
+              id="uploadArea"
+            >
+
+              <div class="upload-icon">
+
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M19 7h-3.17L14 5h-4L8.17
+                    7H5a3 3 0 0 0-3 3v7a3 3
+                    0 0 0 3 3h14a3 3 0 0 0
+                    3-3v-7a3 3 0 0 0-3-3zm-7
+                    10a4 4 0 1 1 0-8 4 4 0
+                    0 1 0 8z"
+                  />
+                </svg>
+
+              </div>
+
+
+              <div class="upload-copy">
+
+                <strong>
+                  Add a photo or MP4 video
+                </strong>
+
+                <span>
+                  Tap to choose a file
+                </span>
+
+                <small>
+                  JPG, PNG or MP4
+                </small>
+
+              </div>
+
+            </label>
+
+
+            <input
+              id="attachment"
+              name="attachment"
+              class="file-input"
+              type="file"
+              accept="image/jpeg,image/png,video/mp4"
+            >
+
+
+            <div
+              id="fileInfo"
+              class="file-info"
+            ></div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Result Message -->
+        <div
+          id="message"
+          class="message"
+          role="status"
+          aria-live="polite"
+        ></div>
+
+
+        <!-- Submit -->
+        <button
+          id="submitButton"
+          class="submit-button"
+          type="submit"
+        >
+
+          <span id="submitButtonText">
+            SUBMIT IT ISSUE
+          </span>
+
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M12 4l-1.41 1.41L16.17
+              11H4v2h12.17l-5.58
+              5.59L12 20l8-8z"
+            />
+          </svg>
+
+        </button>
+
+
+        <div class="support-note">
+
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M12 2a10 10 0 1 0 0
+              20 10 10 0 0 0 0-20zm1
+              15h-2v-6h2zm0-8h-2V7h2z"
+            />
+          </svg>
+
+          <span>
+            Your ticket will be sent directly to
+            Campus IT Support through Microsoft Teams.
+          </span>
+
+        </div>
+
+      </form>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+      <strong>
+        Bearcat Dining
+      </strong>
+
+      <span>
+        Campus IT Support
+      </span>
+
+     
+
+    </footer>
+
+  </main>
+
+
+  <script src="app.js"></script>
+
+</body>
+</html>
